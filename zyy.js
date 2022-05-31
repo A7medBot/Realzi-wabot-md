@@ -155,19 +155,19 @@ var buatpesan = await generateWAMessageFromContent(m.chat, {
           {
             "urlButton": {
               "displayText": "My Group",
-              "url": "https://chat.whatsapp.com/E14rIyYMuovIfkskhi5QN9"
+              "url": "not yet"
             }
           },
           {
             "callButton": {
               "displayText": "Call Owner",
-              "phoneNumber": "+62 858-7831-3791"
-            }
-          },
-          {
-            "quickReplyButton": {
-              "displayText": "Donate",
-              "id": `${prefix}donate`
+              "phoneNumber": "+9647717555198"
+         //   }
+       //   },
+        //  {
+          //  "quickReplyButton": {
+            //  "displayText": "Donate",
+            //  "id": `${prefix}donate`
             }
           },
           {
@@ -830,7 +830,7 @@ break
             let member = participants.map(u => u.id)
             let me = m.sender
             let jodoh = member[Math.floor(Math.random() * member.length)]
-            let jawab = `👫Jodoh mu adalah
+            let jawab = `👫Your match is
 
 @${me.split('@')[0]} ❤️ @${jodoh.split('@')[0]}`
             let ments = [me, jodoh]
@@ -2073,7 +2073,7 @@ hx.ttdownloader(q).then( data => {
 })
 	break
 case 'gcbot': case 'gc': case 'bot':
-m.reply('*Join To Group Official Bot : https://chat.whatsapp.com/BDd6hcvE6iVBpbqSpblyNA*')
+m.reply('*Join To Group Official Bot : not yet*')
 break
 
 case 'tiktoknowm':
