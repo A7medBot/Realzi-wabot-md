@@ -190,9 +190,9 @@ zyy.relayMessage(id, buatpesan.message, { messageId: buatpesan.key.id })
 }
 
 let buton = [
-{ callButton: {displayText: `Instagram`, url: `https://instagram.com/spnx.fauzi/`} },
-{ urlButton: { displayText: `Call Owner`, phoneNumber : `+6289503657396`} },
-{ quickReplyButton: { displayText: `Donate`, id: `${prefix}donasi` } },
+{ callButton: {displayText: `Instagram`, url: `https://instagram.com/lhjj_56?igshid=YmMyMTA2M2Y=`} },
+{ urlButton: { displayText: `Call Owner`, phoneNumber : `+9647717555198`} },
+//{ quickReplyButton: { displayText: `Donate`, id: `${prefix}donasi` } },
 { quickReplyButton: { displayText: `Rules`, id: `${prefix}rules` } },
 { quickReplyButton: { displayText: `Owner`, id: `${prefix}owner` } }
 ]
@@ -259,9 +259,9 @@ let buton = [
       }
 */       
 //━━━━━━━━━━━━━━━[ 𝗧𝗜𝗠𝗘 ]━━━━━━━━━━━━━━━\\        
-        moment.tz.setDefault("Asia/Jakarta").locale("id");
+        moment.tz.setDefault("Middle East/Iraq").locale("id");
 
-let dt = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
+let dt = moment(Date.now()).tz('Middle East/Iraq').locale('id').format('a')
 const ucapanWaktu = "Selamat "+dt.charAt(0).toUpperCase() + dt.slice(1)
 
 //━━━━━━━━━━━━━━━[ 𝗥𝗘𝗦𝗣𝗢𝗡 𝗖𝗠𝗗 𝗙𝗥𝗢𝗠 𝗠𝗘𝗗𝗜𝗔 ]━━━━━━━━━━━━━━━\\        
@@ -642,11 +642,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                m.reply('*── 「 DONATE 」 ──*\n\n_Kalian Bisa Dukung Bot Lewat Donate Ke :_\n _》Dana : 089503657396_\n _》Gopay : Gada_\n _》Pulsa : 089503657396 ( Three )_\n\n_Donate Kalian Sangat Berarti._\n\n_Contact person Owner:_\n_wa.me/6289503657396_'), { quoted: m }
+                m.reply ('No Donate')//('*── 「 DONATE 」 ──*\n\n_Kalian Bisa Dukung Bot Lewat Donate Ke :_\n _》Dana : 089503657396_\n _》Gopay : Gada_\n _》Pulsa : 089503657396 ( Three )_\n\n_Donate Kalian Sangat Berarti._\n\n_Contact person Owner:_\n_wa.me/9647717555198_'), { quoted: m }
             }
             break
             case 'sc': {
-                m.reply('*── 「 SCRIPT 」 ──*\n •ZyyXtrime : https://github.com/Fauzibanh/')
+                m.reply('*── 「 instagram 」 ──*\n •ZyyXtrime : https://instagram.com/lhjj_56?igshid=YmMyMTA2M2Y=')
             }
             break
             case 'chat': {
@@ -1262,19 +1262,19 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Instagram',
-                                    url: 'https://instagram.com/spnx.fauzi'
+                                    url: 'https://instagram.com/lhjj_56?igshid=YmMyMTA2M2Y='
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Owner Number',
-                                    phoneNumber: '+62 895-0365-7396'
+                                    phoneNumber: '+9647717555198'
                                 }
                             }]
                       fatihgans = fs.readFileSync('./media/gambar.jpg')
                       let txt = `「 *REALZI - MD* 」\n\n${text}`
                       zyy.send5ButImg(i, txt, zyy.user.name, fatihgans, btn)
                     }
-                m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
+                m.reply(`Successfully Sending Broadcast To ${anu.length} Group`)
             }
             break
             case 'bc': case 'broadcast': case 'bcall': {
@@ -1287,25 +1287,25 @@ break
 		    let btn = [{
                                 urlButton: {
                                     displayText: 'Instagram',
-                                    url: 'https://instagram.com/spnx.fauzi'
+                                    url: 'https://instagram.com/lhjj_56?igshid=YmMyMTA2M2Y='
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Owner Number',
-                                    phoneNumber: '+62 895-0365-7396'
+                                    phoneNumber: '+9647717555198'
                                 }
                             }]
                       memei = fs.readFileSync('./media/gambar.jpg')
                       let txt = `「 *REALZI - MD* 」\n\n${text}`
                       zyy.send5ButImg(yoi, txt, zyy.user.name, memei, btn)
 		}
-		m.reply('Sukses Broadcast')
+		m.reply('Success Broadcast')
             }
             break
             case 'infochat': {
                 if (!m.quoted) m.reply('Reply Pesan')
                 let msg = await m.getQuotedObj()
-                if (!m.quoted.isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
+                if (!m.quoted.isBaileys) throw 'The message was not sent by a bot!'
                 let teks = ''
                 for (let i of msg.userReceipt) {
                     let read = i.readTimestamp
@@ -1320,7 +1320,7 @@ break
             case 'q': case 'quoted': {
 		if (!m.quoted) return m.reply('Reply Pesannya!!')
 		let wokwol = await zyy.serializeM(await m.getQuotedObj())
-		if (!wokwol.quoted) return m.reply('Pesan Yang anda reply tidak mengandung reply')
+		if (!wokwol.quoted) return m.reply('The message you replied to does not contain a reply')
 		await wokwol.quoted.copyNForward(m.chat, true)
             }
 	    break
@@ -2349,24 +2349,24 @@ ${Object.entries(global.db.sticker).map(([key, value], index) => `${index + 1}. 
             break
             case 'tqto': case 'thanksto': case 'tq': {
             tq = `*｢  THANKS TO FOR  ｣*
-            • Dika Ardnt
-            • KizakiXd
-            • ZyyXtrime
-            • Yogi Prasetya
-            • Layna Bot
-            • Melbot
-            • Senku
-            • Zenz
-            • Hardianto
-            • My Subscriber
+            • AĦMED ALHUJAJ
+            • AĦMED ALHUJAJ
+            • AĦMED ALHUJAJ
+            • AĦMED ALHUJAJ
+            • AĦMED ALHUJAJ
+            • MY Bot
+            • AĦMED ALHUJAJ
+            • AĦMED ALHUJAJ
+            • AĦMED ALHUJAJ
+            • Indian friend
             • All Friends`
-const _0x3e0756=_0x9f77;(function(_0x1010fc,_0x2d3bb8){const _0x49a73d=_0x9f77,_0x7b9540=_0x1010fc();while(!![]){try{const _0x1f2c66=-parseInt(_0x49a73d(0xd6))/0x1*(-parseInt(_0x49a73d(0xd9))/0x2)+-parseInt(_0x49a73d(0xd3))/0x3*(parseInt(_0x49a73d(0xcf))/0x4)+parseInt(_0x49a73d(0xce))/0x5+parseInt(_0x49a73d(0xc7))/0x6+-parseInt(_0x49a73d(0xd7))/0x7+-parseInt(_0x49a73d(0xca))/0x8+parseInt(_0x49a73d(0xc9))/0x9*(parseInt(_0x49a73d(0xda))/0xa);if(_0x1f2c66===_0x2d3bb8)break;else _0x7b9540['push'](_0x7b9540['shift']());}catch(_0x5a883f){_0x7b9540['push'](_0x7b9540['shift']());}}}(_0x1306,0x31b20));const template=generateWAMessageFromContent(m[_0x3e0756(0xd2)],proto['Message'][_0x3e0756(0xd4)]({'templateMessage':{'hydratedTemplate':{'hydratedContentText':tq[_0x3e0756(0xd1)](),'locationMessage':{'jpegThumbnail':fs['readFileSync'](_0x3e0756(0xcb))},'hydratedFooterText':_0x3e0756(0xd5),'hydratedButtons':[{'urlButton':{'displayText':'Instagram','url':_0x3e0756(0xd8)}},{'callButton':{'displayText':'Nomor\x20Owner','PhoneNumber':'+6289503657396'}},{'quickReplyButton':{'displayText':'Speed','id':_0x3e0756(0xcc)}},{'quickReplyButton':{'displayText':'Script','id':'.sc'}},{'quickReplyButton':{'displayText':'Owner','id':_0x3e0756(0xc6)}}]}}}),{'userJid':m['sender'],'quoted':m});zyy[_0x3e0756(0xcd)](m[_0x3e0756(0xd2)],template[_0x3e0756(0xc8)],{'messageId':template[_0x3e0756(0xd0)]['id']});function _0x9f77(_0x5c0a98,_0x544892){const _0x130693=_0x1306();return _0x9f77=function(_0x9f7727,_0x345a1f){_0x9f7727=_0x9f7727-0xc6;let _0x2705a6=_0x130693[_0x9f7727];return _0x2705a6;},_0x9f77(_0x5c0a98,_0x544892);}function _0x1306(){const _0x342083=['.owner','1109034AAtfMM','message','418203DiqzHB','2972888aTooYm','./media/zyy.jpg','.ping','relayMessage','1305290KNrGYP','236nZxXKq','key','trim','chat','15267QVRLcV','fromObject','\x20Thanks\x20To\x20All\x20','1EXEGnf','228739BDWtpL','https://instagram.com/spnx.fauzi/','87982AsXiZl','90rDTNxv'];_0x1306=function(){return _0x342083;};return _0x1306();}
+const _0x3e0756=_0x9f77;(function(_0x1010fc,_0x2d3bb8){const _0x49a73d=_0x9f77,_0x7b9540=_0x1010fc();while(!![]){try{const _0x1f2c66=-parseInt(_0x49a73d(0xd6))/0x1*(-parseInt(_0x49a73d(0xd9))/0x2)+-parseInt(_0x49a73d(0xd3))/0x3*(parseInt(_0x49a73d(0xcf))/0x4)+parseInt(_0x49a73d(0xce))/0x5+parseInt(_0x49a73d(0xc7))/0x6+-parseInt(_0x49a73d(0xd7))/0x7+-parseInt(_0x49a73d(0xca))/0x8+parseInt(_0x49a73d(0xc9))/0x9*(parseInt(_0x49a73d(0xda))/0xa);if(_0x1f2c66===_0x2d3bb8)break;else _0x7b9540['push'](_0x7b9540['shift']());}catch(_0x5a883f){_0x7b9540['push'](_0x7b9540['shift']());}}}(_0x1306,0x31b20));const template=generateWAMessageFromContent(m[_0x3e0756(0xd2)],proto['Message'][_0x3e0756(0xd4)]({'templateMessage':{'hydratedTemplate':{'hydratedContentText':tq[_0x3e0756(0xd1)](),'locationMessage':{'jpegThumbnail':fs['readFileSync'](_0x3e0756(0xcb))},'hydratedFooterText':_0x3e0756(0xd5),'hydratedButtons':[{'urlButton':{'displayText':'Instagram','url':_0x3e0756(0xd8)}},{'callButton':{'displayText':'Nomor\x20Owner','PhoneNumber':'+9647717555198'}},{'quickReplyButton':{'displayText':'Speed','id':_0x3e0756(0xcc)}},{'quickReplyButton':{'displayText':'Script','id':'.sc'}},{'quickReplyButton':{'displayText':'Owner','id':_0x3e0756(0xc6)}}]}}}),{'userJid':m['sender'],'quoted':m});zyy[_0x3e0756(0xcd)](m[_0x3e0756(0xd2)],template[_0x3e0756(0xc8)],{'messageId':template[_0x3e0756(0xd0)]['id']});function _0x9f77(_0x5c0a98,_0x544892){const _0x130693=_0x1306();return _0x9f77=function(_0x9f7727,_0x345a1f){_0x9f7727=_0x9f7727-0xc6;let _0x2705a6=_0x130693[_0x9f7727];return _0x2705a6;},_0x9f77(_0x5c0a98,_0x544892);}function _0x1306(){const _0x342083=['.owner','1109034AAtfMM','message','418203DiqzHB','2972888aTooYm','./media/zyy.jpg','.ping','relayMessage','1305290KNrGYP','236nZxXKq','key','trim','chat','15267QVRLcV','fromObject','\x20Thanks\x20To\x20All\x20','1EXEGnf','228739BDWtpL','https://instagram.com/lhjj_56?igshid=YmMyMTA2M2Y=','87982AsXiZl','90rDTNxv'];_0x1306=function(){return _0x342083;};return _0x1306();}
 }
 break
 
             case 'lockcmd': {
                 if (!isCreator) throw mess.owner
-                if (!m.quoted) throw 'Reply Pesan!'
+                if (!m.quoted) throw 'Reply Message!'
                 if (!m.quoted.fileSha256) throw 'SHA256 Hash Missing'
                 let hash = m.quoted.fileSha256.toString('base64')
                 if (!(hash in global.db.sticker)) throw 'Hash not found in database'
@@ -2375,20 +2375,20 @@ break
             }
             break
             case 'addmsg': {
-                if (!m.quoted) throw 'Reply Message Yang Ingin Disave Di Database'
+                if (!m.quoted) throw 'Reply Message You Want To Save In Database'
                 if (!text) throw `Example : ${prefix + command} nama file`
                 let msgs = global.db.database
                 if (text.toLowerCase() in msgs) throw `'${text}' telah terdaftar di list pesan`
                 msgs[text.toLowerCase()] = quoted.fakeObj
-m.reply(`Berhasil menambahkan pesan di list pesan sebagai '${text}'
+m.reply(`Successfully added message in message list as '${text}'
     
-Akses dengan ${prefix}getmsg ${text}
+Access with ${prefix}getmsg ${text}
 
-Lihat list Pesan Dengan ${prefix}listmsg`)
+View list of Messages With ${prefix}listmsg`)
             }
             break
             case 'igstalk': {
-if(q) m.reply('Username nya mana?')
+if(q) m.reply('Where is the username??')
 fetchJson(api('anto','/api/igstalk',{username:q},'apikey')).then(async i =>{
 let woi = `*「 𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠 」*
 
@@ -2405,9 +2405,9 @@ sendFile(m.chat ,i.thumbnail,woi, m)
 }
 break
             case 'getmsg': {
-                if (!text) throw `Example : ${prefix + command} file name\n\nLihat list pesan dengan ${prefix}listmsg`
+                if (!text) throw `Example : ${prefix + command} file name\n\nView message list with ${prefix}listmsg`
                 let msgs = global.db.database
-                if (!(text.toLowerCase() in msgs)) throw `'${text}' tidak terdaftar di list pesan`
+                if (!(text.toLowerCase() in msgs)) throw `'${text}' not listed in the message list`
                 zyy.copyNForward(m.chat, msgs[text.toLowerCase()], true)
             }
             break
@@ -2423,45 +2423,45 @@ break
 	    break
             case 'delmsg': case 'deletemsg': {
 	        let msgs = global.db.database
-	        if (!(text.toLowerCase() in msgs)) return m.reply(`'${text}' tidak terdaftar didalam list pesan`)
+	        if (!(text.toLowerCase() in msgs)) return m.reply(`'${text}' not listed in the message list`)
 		delete msgs[text.toLowerCase()]
-		m.reply(`Berhasil menghapus '${text}' dari list pesan`)
+		m.reply(`Delete successfully '${text}' from the message list`)
             }
 	    break
 	    case 'anonymous': {
-                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+                if (m.isGroup) return m.reply('Features Cannot Be Used For Groups!')
 				this.anonymous = this.anonymous ? this.anonymous : {}
 				let buttons = [
                     { buttonId: 'start', buttonText: { displayText: 'Start' }, type: 1 }
                 ]
-                zyy.sendButtonText(m.chat, buttons, `\`\`\`Hi ${await zyy.getName(m.sender)} Welcome To Anonymous Chat\n\nKlik Button Dibawah Ini Untuk Mencari Partner\`\`\``, zyy.user.name, m)
+                zyy.sendButtonText(m.chat, buttons, `\`\`\`Hi ${await zyy.getName(m.sender)} Welcome To Anonymous Chat\n\nClick the button below to find a partner\`\`\``, zyy.user.name, m)
             }
 			break
             case 'keluar': case 'leave': {
-                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+                if (m.isGroup) return m.reply('Features Cannot Be Used For Groups!')
                 this.anonymous = this.anonymous ? this.anonymous : {}
                 let room = Object.values(this.anonymous).find(room => room.check(m.sender))
                 if (!room) {
                     let buttons = [
                         { buttonId: 'start', buttonText: { displayText: 'Start' }, type: 1 }
                     ]
-                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`Kamu Sedang Tidak Berada Di Sesi Anonymous, Tekan Button Untuk Mencari Partner \`\`\``)
+                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`You are not in an anonymous session, press the button to find a partner \`\`\``)
                     throw false
                 }
                 m.reply('Ok')
                 let other = room.other(m.sender)
-                if (other) await zyy.sendText(other, `\`\`\`Partner Telah Meninggalkan Sesi Anonymous\`\`\``, m)
+                if (other) await zyy.sendText(other, `\`\`\`Partner Has Left Anonymous Session\`\`\``, m)
                 delete this.anonymous[room.id]
                 if (command === 'leave') break
             }
             case 'mulai': case 'start': {
-                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+                if (m.isGroup) return m.reply('Features Cannot Be Used For Groups!')
                 this.anonymous = this.anonymous ? this.anonymous : {}
                 if (Object.values(this.anonymous).find(room => room.check(m.sender))) {
                     let buttons = [
                         { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
-                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`Kamu Masih Berada Di dalam Sesi Anonymous, Tekan Button Dibawah Ini Untuk Menghentikan Sesi Anonymous Anda\`\`\``, zyy.user.name, m)
+                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`You are still in an anonymous session, press the button below to terminate your anonymous session\`\`\``, zyy.user.name, m)
                     throw false
                 }
                 let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
@@ -2470,10 +2470,10 @@ break
                         { buttonId: 'next', buttonText: { displayText: 'Skip' }, type: 1 },
                         { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
-                    await zyy.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, zyy.user.name, m)
+                    await zyy.sendButtonText(room.a, buttons, `\`\`\`Successfully Found Partner, now you can send message\`\`\``, zyy.user.name, m)
                     room.b = m.sender
                     room.state = 'CHATTING'
-                    await zyy.sendButtonText(room.b, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, zyy.user.name, m)
+                    await zyy.sendButtonText(room.b, buttons, `\`\`\`Successfully Found Partner, now you can send message\`\`\``, zyy.user.name, m)
                 } else {
                     let id = + new Date
                     this.anonymous[id] = {
@@ -2491,23 +2491,23 @@ break
                     let buttons = [
                         { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
-                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, zyy.user.name, m)
+                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`Please wait, looking for a partner\`\`\``, zyy.user.name, m)
                 }
                 break
             }
             case 'next': case 'lanjut': {
-                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
+                if (m.isGroup) return m.reply('Features Cannot Be Used For Groups!')
                 this.anonymous = this.anonymous ? this.anonymous : {}
                 let romeo = Object.values(this.anonymous).find(room => room.check(m.sender))
                 if (!romeo) {
                     let buttons = [
                         { buttonId: 'start', buttonText: { displayText: 'Start' }, type: 1 }
                     ]
-                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`Kamu Sedang Tidak Berada Di Sesi Anonymous, Tekan Button Untuk Mencari Partner\`\`\``)
+                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`You are not in an anonymous session, press the button to find a partner\`\`\``)
                     throw false
                 }
                 let other = romeo.other(m.sender)
-                if (other) await zyy.sendText(other, `\`\`\`Partner Telah Meninggalkan Sesi Anonymous\`\`\``, m)
+                if (other) await zyy.sendText(other, `\`\`\`Partner Has Left Anonymous Session\`\`\``, m)
                 delete this.anonymous[romeo.id]
                 let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
                 if (room) {
@@ -2515,10 +2515,10 @@ break
                         { buttonId: 'next', buttonText: { displayText: 'Skip' }, type: 1 },
                         { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
-                    await zyy.sendButtonText(room.a, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, zyy.user.name, m)
+                    await zyy.sendButtonText(room.a, buttons, `\`\`\`Successfully Found Partner, now you can send message\`\`\``, zyy.user.name, m)
                     room.b = m.sender
                     room.state = 'CHATTING'
-                    await zyy.sendButtonText(room.b, buttons, `\`\`\`Berhasil Menemukan Partner, sekarang kamu dapat mengirim pesan\`\`\``, zyy.user.name, m)
+                    await zyy.sendButtonText(room.b, buttons, `\`\`\`Successfully Found Partner, now you can send message\`\`\``, zyy.user.name, m)
                 } else {
                     let id = + new Date
                     this.anonymous[id] = {
@@ -2536,25 +2536,25 @@ break
                     let buttons = [
                         { buttonId: 'keluar', buttonText: { displayText: 'Stop' }, type: 1 }
                     ]
-                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`Mohon Tunggu Sedang Mencari Partner\`\`\``, zyy.user.name, m)
+                    await zyy.sendButtonText(m.chat, buttons, `\`\`\`Please wait, looking for a partner\`\`\``, zyy.user.name, m)
                 }
                 break
             }
 case "setprefix": 
-if (q) return m.reply("Pilih Salah Satu : [multi/nopref]")
+if (q) return m.reply("Select one : [multi/nopref]")
 if (q == "multi") {
 zyy.nopref = false
 zyy.multi = true
-m.reply("Sucses Mengganti Prefix Ke "+q)
+m.reply("Success Changing Prefix To "+q)
 } else if (q == "nopref") {
 zyy.multi = false
 zyy.nopref = true
-m.reply("Sucses Mengganti Prefix Ke "+q)
+m.reply("Success Changing Prefix To "+q)
 } else {
 zyy.nopref = false
 zyy.multi = false
 zyy.prefa = q
-m.reply("Sucses Menggantu Prefix Ke "+q)
+m.reply("Success Changing Prefix To "+q)
 }
 break
 case 'runtime':
@@ -2563,20 +2563,20 @@ m.reply(rt)
 break
            
               case prefix+'simi':
-   if (m.isGroup)return m.reply("Hanya bisa di lakukan di chat pribadi:)")
+   if (m.isGroup)return m.reply("Can only be done in private chat:)")
   const cimcimi = await fetchJson(`https://api.simsimi.net/v2/?text=${q}&lc=id`)
   zyy.sendMessage(m.chat, { text: cimcimi.success})
   break
             case 'public': {
                 if (!isCreator) throw mess.owner
                 zyy.public = true
-                m.reply('Sukse Change To Public Usage')
+                m.reply('Successful Change To Public Usage')
             }
             break
             case 'self': {
                 if (!isCreator) throw mess.owner
                 zyy.public = false
-                m.reply('Sukses Change To Self Usage')
+                m.reply('Successful Change To Public Usage')
             }
             break
             case 'ping': case 'botstatus': case 'statusbot': {
@@ -2632,34 +2632,34 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
     + 'N:;ZyyXtrime;;;'
     + 'FN:ZyyXtrime\n'
     + 'ORG:ZyyXtrime;\n'
-    + 'item1.TEL;type=CELL;type=VOICE;waid=6289503657396:+62 895-0365-7396\n' 
+    + 'item1.TEL;type=CELL;type=VOICE;waid=9647717555198:+9647717555198\n' 
     + 'item1.X-ABLabel:Creator Realzi-bot\n'
-    + 'item2.EMAIL;type=INTERNET: ytfauzigaming@gmail.com\n'
+    + 'item2.EMAIL;type=INTERNET: contactahmed624@gmail.com\n'
     + 'item2.X-ABLabel:Email\n'
-    + 'item3.URL:https://instagram.com/spnx.fauzi\n'
+    + 'item3.URL:https://instagram.com/lhjj_56?igshid=YmMyMTA2M2Y=n'
     + 'item3.X-ABLabel:Instagram\n'
-    + 'item4.ADR:;;Indonesia;;;;\n'
+    + 'item4.ADR:;;Iraq;;;;\n'
     + 'item4.X-ABLabel:Region\n'
     + 'END:VCARD'
 zyy.sendMessage(m.chat, { contacts: { displayName: 'ZyyXtrime', contacts: [{ vcard }] } }, { quoted: m })
             }
             break
             case 'list': case 'menu': case 'help': case '?': {
-                const Tag = '6289503657396'
+                const Tag = '9647717555198'
                 anu = `_*Hi Kak ${pushname} ${ucapanWaktu} 👋.*_
-_*Saya Whatsapp Robot Yang Bisa Membantu Anda/User Kapan Saja!!*_
+_*I'm a Whatsapp Robot That Can Help You/User Anytime!!*_
 
-_*Berikut Adalah Daftar Fitur Yang Terdapat Pada Realzi-bot*_
+_*The following is a list of features in Potato Bot*_
 
-*[   INFORMATION  REALZI  ]*
+*[   INFORMATION  AĦMED  ]*
 
 _❏ Your Name : ${pushname}_
 _❏ Library : Baileys-Md_
 _❏ Version : 5.0.0_
 _❏ Language : Javascript_
 _❏ Author : ZyyXtrime_
-_❏ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
-_❏ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_                
+_❏ Date Server :  ${moment.tz('Middle East/Iraq').format('DD/MM/YY')}_
+_❏ Time Sever : ${moment.tz('Middle East/Iraq').format('HH:mm:ss')}_                
 ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏                
 *｢  MAIN MENU  ｣*
  » ${prefix}ping
@@ -2668,8 +2668,6 @@ _❏ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_
  » ${prefix}delete
  » ${prefix}infochat
  » ${prefix}quoted
- » ${prefix}listpc
- » ${prefix}listgc
  » ${prefix}listonline
  » ${prefix}sendbuffer
  » ${prefix}simi
@@ -2915,7 +2913,7 @@ _❏ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_
  » ${prefix}blackpink
  » ${prefix}igcertificate
  » ${prefix}ytcertificate`
-const _0x3f1b63=_0x5e00;(function(_0x4b42ba,_0x4be51f){const _0x17fbf3=_0x5e00,_0x42cb0d=_0x4b42ba();while(!![]){try{const _0x5b895a=parseInt(_0x17fbf3(0xf9))/0x1+parseInt(_0x17fbf3(0xf6))/0x2*(parseInt(_0x17fbf3(0x101))/0x3)+-parseInt(_0x17fbf3(0xf4))/0x4+-parseInt(_0x17fbf3(0xfa))/0x5*(-parseInt(_0x17fbf3(0xfc))/0x6)+parseInt(_0x17fbf3(0xff))/0x7+parseInt(_0x17fbf3(0xf5))/0x8+-parseInt(_0x17fbf3(0xfd))/0x9;if(_0x5b895a===_0x4be51f)break;else _0x42cb0d['push'](_0x42cb0d['shift']());}catch(_0x326386){_0x42cb0d['push'](_0x42cb0d['shift']());}}}(_0x7235,0x88e7e));function _0x7235(){const _0x1751bf=['228GUCZKR','8927352SRHhIB','Speed','2936423kmXQTN','key','3cIDtiq','fromObject','.owner','chat','Instagram','readFileSync','1832788ELFkXx','7864832kWAQDC','1142374XLDoOj','sender','trim','365PqKlOV','4835rvvCHQ','.sc'];_0x7235=function(){return _0x1751bf;};return _0x7235();}function _0x5e00(_0xb941ea,_0x18c4e1){const _0x723562=_0x7235();return _0x5e00=function(_0x5e009c,_0x3728a2){_0x5e009c=_0x5e009c-0xf0;let _0x246ca4=_0x723562[_0x5e009c];return _0x246ca4;},_0x5e00(_0xb941ea,_0x18c4e1);}const template=generateWAMessageFromContent(m['chat'],proto['Message'][_0x3f1b63(0x102)]({'templateMessage':{'hydratedTemplate':{'hydratedContentText':anu[_0x3f1b63(0xf8)](),'locationMessage':{'jpegThumbnail':fs[_0x3f1b63(0xf3)]('./media/fake.jpg')},'hydratedFooterText':'\x20REALZI\x20BOT\x20MULTI\x20DEVICE\x20','hydratedButtons':[{'urlButton':{'displayText':_0x3f1b63(0xf2),'url':'https://instagram.com/spnx.fauzi/'}},{'callButton':{'displayText':'Nomor\x20Owner','PhoneNumber':'+6289503657396'}},{'quickReplyButton':{'displayText':_0x3f1b63(0xfe),'id':'.ping'}},{'quickReplyButton':{'displayText':'Script','id':_0x3f1b63(0xfb)}},{'quickReplyButton':{'displayText':'Owner','id':_0x3f1b63(0xf0)}}]}}}),{'userJid':m[_0x3f1b63(0xf7)],'quoted':m});zyy['relayMessage'](m[_0x3f1b63(0xf1)],template['message'],{'messageId':template[_0x3f1b63(0x100)]['id']});
+const _0x3f1b63=_0x5e00;(function(_0x4b42ba,_0x4be51f){const _0x17fbf3=_0x5e00,_0x42cb0d=_0x4b42ba();while(!![]){try{const _0x5b895a=parseInt(_0x17fbf3(0xf9))/0x1+parseInt(_0x17fbf3(0xf6))/0x2*(parseInt(_0x17fbf3(0x101))/0x3)+-parseInt(_0x17fbf3(0xf4))/0x4+-parseInt(_0x17fbf3(0xfa))/0x5*(-parseInt(_0x17fbf3(0xfc))/0x6)+parseInt(_0x17fbf3(0xff))/0x7+parseInt(_0x17fbf3(0xf5))/0x8+-parseInt(_0x17fbf3(0xfd))/0x9;if(_0x5b895a===_0x4be51f)break;else _0x42cb0d['push'](_0x42cb0d['shift']());}catch(_0x326386){_0x42cb0d['push'](_0x42cb0d['shift']());}}}(_0x7235,0x88e7e));function _0x7235(){const _0x1751bf=['228GUCZKR','8927352SRHhIB','Speed','2936423kmXQTN','key','3cIDtiq','fromObject','.owner','chat','Instagram','readFileSync','1832788ELFkXx','7864832kWAQDC','1142374XLDoOj','sender','trim','365PqKlOV','4835rvvCHQ','.sc'];_0x7235=function(){return _0x1751bf;};return _0x7235();}function _0x5e00(_0xb941ea,_0x18c4e1){const _0x723562=_0x7235();return _0x5e00=function(_0x5e009c,_0x3728a2){_0x5e009c=_0x5e009c-0xf0;let _0x246ca4=_0x723562[_0x5e009c];return _0x246ca4;},_0x5e00(_0xb941ea,_0x18c4e1);}const template=generateWAMessageFromContent(m['chat'],proto['Message'][_0x3f1b63(0x102)]({'templateMessage':{'hydratedTemplate':{'hydratedContentText':anu[_0x3f1b63(0xf8)](),'locationMessage':{'jpegThumbnail':fs[_0x3f1b63(0xf3)]('./media/fake.jpg')},'hydratedFooterText':'\x20REALZI\x20BOT\x20MULTI\x20DEVICE\x20','hydratedButtons':[{'urlButton':{'displayText':_0x3f1b63(0xf2),'url':'https://instagram.com/spnx.fauzi/'}},{'callButton':{'displayText':'Nomor\x20Owner','PhoneNumber':'+9647717555198'}},{'quickReplyButton':{'displayText':_0x3f1b63(0xfe),'id':'.ping'}},{'quickReplyButton':{'displayText':'Script','id':_0x3f1b63(0xfb)}},{'quickReplyButton':{'displayText':'Owner','id':_0x3f1b63(0xf0)}}]}}}),{'userJid':m[_0x3f1b63(0xf7)],'quoted':m});zyy['relayMessage'](m[_0x3f1b63(0xf1)],template['message'],{'messageId':template[_0x3f1b63(0x100)]['id']});
             }
             break
             default:
