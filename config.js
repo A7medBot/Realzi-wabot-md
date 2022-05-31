@@ -18,21 +18,21 @@ global.APIKeys = {
 // Other
 global.Prefix = 'Multi'
 global.modelMenu = 'locButton'
-global.owner = ['6289503657396']
-global.premium = ['6289503657396']
-global.meki = '6289503657396'
-global.ownerNumber = '6289503657396'
-global.packname = 'ZyyXtrime'
-global.author = 'REALZI - BOT'
+global.owner = ['9647717555198']
+global.premium = ['9647717555198']
+global.meki = '9647717555198'
+global.ownerNumber = '9647717555198'
+global.packname = 'Potato'
+global.author = 'AĦMED ALHUJAJ '
 global.sessionName = 'Fauzi'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.Mode = 'Public'
 global.mess = {
     success: 'SUKSES!!.',
-    admin: 'Fitur Khusus Admin Group!',
-    botAdmin: 'Bot Harus Menjadi Admin Terlebih Dahulu!',
-    owner: 'Fitur Khusus Owner Bot',
-    group: 'Fitur Digunakan Hanya Untuk Group!',
+    admin: 'Future For Admin Group!',
+    botAdmin: 'Bot Should Be Admin First!',
+    owner: 'Futures for Owner Bot',
+    group: 'Future Dig Hanya Untuk Group!',
     private: 'Fitur Digunakan Hanya Untuk Private Chat!',
     bot: 'Fitur Khusus Pengguna Nomor Bot',
     wait: 'Loading...',
