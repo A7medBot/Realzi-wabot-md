@@ -32,21 +32,21 @@ global.mess = {
     admin: 'Future For Admin Group!',
     botAdmin: 'Bot Should Be Admin First!',
     owner: 'Futures for Owner Bot',
-    group: 'Future Dig Hanya Untuk Group!',
-    private: 'Fitur Digunakan Hanya Untuk Private Chat!',
-    bot: 'Fitur Khusus Pengguna Nomor Bot',
+    group: 'Future Used Only For Group!',
+    private: 'Future Used Only For Private Chat!',
+    bot: 'Future User Only Number Bot',
     wait: 'Loading...',
     done: 'Done',
-    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
-    wrongFormat: 'Perintah Salah!!\nSertakan Link setelah Command..',
-    example1: 'Welcome @user Di Group @subject Jangan Lupa Baca Rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @subject (Group Name)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)'
+    endLimit: 'Exhausted your Daily Limit, Limit will be reset every clock 12',
+    wrongFormat: 'Commands One !! \ Include links after Command ..',
+    example1: 'Welcome @user By Group @subject Don't forget to read the rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @subject (Group Name)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)'
 ,
-    example2: 'Good Bye @user Di Group @subject Jangan Lupa Baca Rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @subject (Group Name)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)', 
-    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12'
+    example2: 'Good Bye @user By Group @subject Don't forget to read the rules @desc\n\nNote :\n1. @user (Mention User Join)\n2. @subject (Group Name)\n3. @tanggal (Date Now)\n4. @desc (Get Description Group)', 
+    endLimit: 'Exhausted your Daily Limit, Limit will be reset every clock 12'
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 1000
+    free: "Infinity" 
 }
 global.thumb = fs.readFileSync('./media/zyy.jpg')
 global.pathImg = fs.readFileSync('./media/gambar.jpg')
